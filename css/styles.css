@@ -37,10 +37,10 @@ display: block;
 }
 
 /*============  COMPONENTS  ===================*/
-.hero, .footer{
+.footer{
 background-color: var(--backgr-color);
 }
-.conteiner{
+.container{
 width: 1200px;
 padding: 0 15px;
 margin-right: auto;
@@ -52,27 +52,6 @@ padding: 94px 0;
 /*============ END  COMPONENTS  ===================*/
 
 /*==============  HEADER  =========================*/
-.header{
-padding: 24px 0;
-border-bottom: 1px solid var(--border-line-color);
-}
-
-.header-conteiner{
-display: flex;
-align-items: center;
-}
-.navigation-list{
-display: flex;
-align-items: center;   
-}
-.contact-header-list{
-display: flex;
-align-items: center; 
-margin-left: auto; 
-}
-.contact-header-list>:first-child{
-margin-right: 20px;
-}
 /*-----LOGO-----*/
 .logo{
 font-family: var(--additional-font-family);
@@ -89,6 +68,30 @@ color: var(--main-dark-color);
 color: var(--main-light-color);
 }
 /*-----END LOGO-----*/
+.header{
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border-line-color);
+    }
+    
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    }
+.navigation{
+    display: flex;
+    align-items: center;
+    }
+.navigation-list{
+    display: flex;    
+    margin-left: 93px; 
+    }  
+.contact-header-list{
+    display: flex;
+    align-items: center; 
+    }
+.contact-header-list>:first-child{
+    margin-right: 20px;
+    }
 .contact-header{
     font-weight: 500;
     font-size: 14px;
@@ -96,9 +99,7 @@ color: var(--main-light-color);
     letter-spacing: 0.02em;  
     color: var(--main-medium-color);          
     }
-.navigation-list {
-    margin-left: 93px;
-}
+
 .navigation-link{
     font-weight: 500;
     font-size: 14px;
@@ -110,7 +111,7 @@ color: var(--main-light-color);
 .contact-header:hover, .contact-header:focus{
     color: var(--brand-color);
     }
-.navigation-list :not(:last-child){
+.navigation-item:not(:last-child){
 margin-right: 50px;
 }
  nav .current-link{
@@ -122,6 +123,7 @@ margin-right: 50px;
 .hero{
     padding: 200px 0;
     text-align: center;
+    background-image: url("../images/background-img.jpg");
 }
 .hero-title {   
     font-weight: 900;
@@ -199,6 +201,9 @@ background-color: var(--backgr-color-section);
 }
 .team-item{
 background-color: var(--main-light-color);
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+
 }
 .team-name-wrapper{
 padding: 30px 0;
@@ -223,7 +228,9 @@ color: var(--main-medium-color);
 /*============  END  SECTION ABOUT + SECTION TEAMS  =============*/
 
 /*============  FOOTER  ===================*/
-
+.footer{
+    padding: 60px 0;
+    }
 .footer-adress{
 margin-top: 20px;
 }
@@ -247,8 +254,8 @@ color: var(--main-medium-color-opacity);
 .contact-footer:hover, .contact-footer:focus{
 color: var(--brand-color);
 }
-.footer{
-padding: 60px 0;
+.contact-footer-item:not(:last-child){
+    margin-bottom: 9px;
 }
 /*============ END FOOTER  ===================*/
 
