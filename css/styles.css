@@ -9,6 +9,7 @@
     --border-img-color: #EEEEEE;
     --backgr-color: #2F303A;
     --backgr-color-section:#F5F4FA;
+    --color-svg: #AFB1B8;
 
     --basic-font-family:"Roboto", sans-serif;
     --additional-font-family: "Raleway", sans-serif;
@@ -152,7 +153,7 @@ margin-right: 50px;
     }       
 /*==============  END HERO  ===================*/
 
-/*=============  SECTION ABOUT + SECTION TEAMS   ==============*/
+/*=============  SECTION ABOUT + SECTION TEAMS + Clients  ==============*/
 .about-description-list{
     display: flex;
     justify-content: space-between;
@@ -164,7 +165,13 @@ margin-right: 50px;
 .about-description-list>:not(:last-child){
     margin-right: 30px;
 }
-
+.our-work-image{
+width: 270px;
+height: 120px;
+padding: 25px 100px;
+margin-bottom: 30px; 
+background-color: var(--backgr-color-section);
+}
 .title-about{
 margin-bottom: 10px;
 font-weight: bold;
@@ -223,7 +230,52 @@ color: var(--main-dark-color);
 font-size: 16px;
 line-height: 1.19;
 letter-spacing: 0.03em;
-color: var(--main-medium-color);    
+color: var(--main-medium-color); 
+margin-bottom: 16px;   
+}
+
+.team-social-list{
+display: flex;
+justify-content: center;
+}
+.team-social-link{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 44px;
+height: 44px;
+background-color: var(--main-light-color); 
+border-radius: 50%;   
+}
+.team-social-item:not(:last-child){
+margin-right: 10px;
+}
+.team-social-icon{
+fill: var(--main-light-color);
+}
+.team-social-link:hover, .team-social-link:focus{
+background-color: var(--brand-color);
+}
+.team-social-link:hover, .team-social-link:focus
+.team-social-icon:hover, .team-social-icon:focus{
+ fill: var(--main-light-color);
+}
+
+
+
+
+.client-list{
+display: flex;
+justify-content: space-between;
+}
+.client-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--color-svg);
+    border-radius: 4px;
 }
 /*============  END  SECTION ABOUT + SECTION TEAMS  =============*/
 
@@ -231,6 +283,10 @@ color: var(--main-medium-color);
 .footer{
     padding: 60px 0;
     }
+.footer-list{
+    display: flex;
+
+}
 .footer-adress{
 margin-top: 20px;
 }
@@ -256,6 +312,18 @@ color: var(--brand-color);
 }
 .contact-footer-item:not(:last-child){
     margin-bottom: 9px;
+}
+.footer-left{
+    margin-right: 70px;
+}
+.footer-social-title{
+margin-bottom: 20px;
+font-weight: bold;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--main-light-color)
 }
 /*============ END FOOTER  ===================*/
 
@@ -333,3 +401,4 @@ color: var(--main-medium-color);
     position: fixed;
     transform: scale(0);
 }
+
